@@ -329,14 +329,21 @@ h2 {
 
 ---------------------------------------------------------------------------------------------------- */
 
-#banner-img {
+/* #banner-img {
 	border-bottom: #f0f0ed solid 1px;
 	border-top: #f0f0ed solid 1px;
 	display: block;
 	height: auto;
 	width: 100%;
+} */
+.wrap-baner{
+	max-width: 1920px;
+	height: 940px;
+	background-image: url(../img/index_new.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
-
 
 /* Counter Section
 
@@ -1274,6 +1281,8 @@ img.preloader {
 	display: none;
 }
 
+/* pupop */
+
 .over_forms {
 	margin: auto;
 	max-width: 550px;
@@ -1289,7 +1298,8 @@ img.preloader {
 .over_forms form input[type="text"],
 .over_forms form input[type="tel"],
 .over_forms form input[type="email"] {
-	width: 380px;
+	max-width: 320px;
+	width: 100%;
 	background-color: #f2f2f2;
 	border: 1px solid #1BB868;
 	padding: 5px 10px;
@@ -1302,7 +1312,8 @@ img.preloader {
 }
 
 .over_forms form textarea {
-	width: 380px;
+	max-width: 320px;
+	width: 100%;
 	background-color: #f2f2f2;
 	border: 1px solid #1BB868;
 	padding: 5px 10px;
@@ -1324,7 +1335,7 @@ img.preloader {
 	margin-top: 10px;
 	text-transform: uppercase;
 }
-
+/* end pupop */
 #left3 #desc {
 	margin-bottom: 30px !important;
 }
