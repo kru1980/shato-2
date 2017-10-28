@@ -296,9 +296,7 @@ h2 {
 
 ---------------------------------------------------------------------------------------------------- */
 
-.wrap--new {
-	max-width: 1970px;
-}
+
 
 .header_grid {
 	min-height: 48px;
@@ -316,7 +314,6 @@ h2 {
 }
 
 .call-text {
-	font-size: 22px;
 	margin-right: 10px;
 }
 
@@ -326,7 +323,6 @@ h2 {
 	font-weight: 700;
 }
 
-@media only screen and (max-width: 420px) {}
 
 
 /* Banner Image
@@ -1378,3 +1374,29 @@ img.preloader {
 .interactive-map-holder {
 	margin-top: 30px;
 }
+
+/* refactoring style */
+a#showing-btn {
+	background: #1bb868;
+	color: #fffffc;
+	display: block;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 26px;
+	margin: 0 auto;
+	padding: 21px;
+	text-decoration: none;
+	text-transform: uppercase;
+	/* width: 558px; */
+	width: 100%;
+}
+a#showing-btn:hover {
+	background: #169554;
+}
+/* a#showing-btn {
+	font-size: 20px;
+	padding: 16px;
+	width: 100%;
+} */
+
+/* end refactoring style */
