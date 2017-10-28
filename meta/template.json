@@ -1,0 +1,581 @@
+{
+	"id": "4306",
+	"name": "Real Estate Template", 
+	"mobile": true, 
+	"notes": "Made logos links, video responsiveness, image stretching fix", 
+	"syntax": 4, 
+	"version": 1.20,
+	"style": {
+		"html": "",
+		"replacements": [
+			{
+				"type": "color", 
+				"name": "Page Background", 
+				"find": "#fffffe"
+			},
+			{
+				"type": "color", 
+				"name": "Secondary Page Background", 
+				"find": "#f0f0f0"
+			},
+			{
+				"type": "color", 
+				"name": "Accent Color", 
+				"find": "#1bb868"
+			},
+			{
+				"type": "color", 
+				"name": "Page Text", 
+				"find": "#4d4c47"
+			},
+			{
+				"type": "color",
+				"name": "Secondary Page Text",
+				"find": "#595853"
+			},
+			{
+				"type": "color",
+				"name": "Bullet Text",
+				"find": "#000001"
+			},
+			{
+				"type": "color",
+				"name": "Banner Border",
+				"find": "#f0f0ed"
+			},
+			{
+				"type": "color", 
+				"name": "Counter Accent Top", 
+				"find": "#e5e5e5"
+			},
+			{
+				"type": "color", 
+				"name": "Counter Accent Bottom", 
+				"find": "#f0f0ef"
+			},
+			{
+				"type": "color", 
+				"name": "Counter Digit", 
+				"find": "#595852"
+			},
+			{
+				"type": "color", 
+				"name": "Button Hover", 
+				"find": "#169554"
+			},
+			{
+				"type": "color", 
+				"name": "Button Text", 
+				"find": "#fffffc"
+			},
+			{
+				"type": "color", 
+				"name": "Footer", 
+				"find": "#4d4c46"
+			}
+
+		]
+	},
+	"elements": [
+		{
+			"id": "header",
+			"name": "Header",
+			"type": "container"
+		},
+		{
+			"data": {
+				"max-width": 250,
+				"max-height": 250
+			},
+			"id": "logo",
+			"name": "Logo",
+			"type": "image",
+			"comment": "Recommended image size is 174x50px"
+		},
+		{
+			"id": "banner",
+			"name": "Banner",
+			"type": "container"
+		},
+		{
+			"id": "call-text",
+			"name": "Call Text",
+			"type": "text"
+		},
+		{
+			"data": {
+				"max-height": 412
+			},
+			"id": "banner-img",
+			"name": "Banner Image",
+			"type": "image",
+			"comment": "Recommended image size is 1400x412px"
+		},
+		{
+			"id": "counter-section",
+			"name": "Counter Section",
+			"type": "container"
+		},
+		{
+			"id": "address",
+			"name": "Headline",
+			"type": "text"
+		},
+		{
+			"id": "address-text",
+			"name": "Counter Section Text",
+			"type": "text"
+		},
+		{
+			"id": "subheadline",
+			"name": "Counter Subheadline",
+			"type": "text"
+		},
+		{
+			"id": "countdown",
+			"name": "Countdown",
+			"type": "countdown"
+		},
+		{
+			"id": "site-header-counter",
+			"name": "Counter",
+			"type": "container"
+		},
+		{
+	    	"type": "link",
+	    	"id": "showing-btn",
+	    	"name": "Optin Button",
+	    	"data": {
+	        "href": "#/optin"
+	    	}
+	    },
+		{
+			"id": "photo-section",
+			"name": "Photo Section",
+			"type": "container"
+		},
+		{
+			"data": {
+				"max-width": 319,
+				"max-height": 350
+			},
+			"id": "photo1",
+			"name": "Photo 1",
+			"type": "image",
+			"comment": "Recommended image size is 319x254px"
+		},
+		{
+			"data": {
+				"max-width": 319 ,
+				"max-height": 350
+			},
+			"id": "photo2",
+			"name": "Photo 2",
+			"type": "image",
+			"comment": "Recommended image size is 319x254px"
+		},
+		{
+			"data": {
+				"max-width": 319,
+				"max-height": 350
+			},
+			"id": "photo3",
+			"name": "Photo 3",
+			"type": "image",
+			"comment": "Recommended image size is 319x254px"
+		},
+		{
+			"id": "middle-section",
+			"name": "Middle Section",
+			"type": "container"
+		},
+		{
+			"id": "column1",
+			"name": "Row 1",
+			"type": "container"
+		},
+		{
+			"id": "left1",
+			"name": "Left Section1",
+			"type": "container"
+		},
+		{
+			"id": "right1",
+			"name": "Right Section1",
+			"type": "container"
+		},
+		{
+			"id": "checks1",
+			"name": "Checks1",
+			"type": "text"
+		},
+		{
+	    	"type": "link",
+	    	"id": "send-btn1",
+	    	"name": "Send Button1",
+	    	"data": {
+	        "href": "#/optin"
+	    	}
+	    },
+		{
+			"id": "checks2",
+			"name": "Checks2",
+			"type": "text"
+		},
+		{
+			"data": {
+				"max-width": 503,
+				"max-height": 400
+			},
+			"id": "photo4",
+			"name": "Photo 4",
+			"type": "image",
+			"comment": "Recommended image size is 503x333px"
+		},
+		{
+			"id": "column2",
+			"name": "Row 2", 
+			"type": "container"
+		},
+		{
+			"id": "left2",
+			"name": "Left Section2",
+			"type": "container"
+		},
+		{
+			"id": "right2",
+			"name": "Right Section2",
+			"type": "container"
+		},
+		{
+			"data": {
+				"max-width": 503,
+				"max-height": 400
+			},
+			"id": "photo5",
+			"name": "Photo 5",
+			"type": "image",
+			"comment": "Recommended image size is 503x333px"
+		},
+		{
+	    	"type": "link",
+	    	"id": "send-btn2",
+	    	"name": "Send Button2",
+	    	"data": {
+	        "href": "#/optin"
+	    	}
+	    },
+		{
+			"id": "column3",
+			"name": "Row 3",
+			"type": "container"
+		},
+		{
+			"id": "left3",
+			"name": "Left Section3",
+			"type": "container"
+		},
+		{
+			"id": "right3",
+			"name": "Right Section3",
+			"type": "container"
+		},
+		{
+			"id": "desc",
+			"name": "Description Text1",
+			"type": "text"
+		},
+		{
+			"data": {
+				"max-width": 503,
+				"max-height": 400
+			},
+			"id": "photo6",
+			"name": "Photo 6",
+			"type": "image",
+			"comment": "Recommended image size is 503x333px"
+		},
+		{
+	    	"type": "link",
+	    	"id": "send-btn3",
+	    	"name": "Send Button3",
+	    	"data": {
+	        "href": "#/optin"
+	    	}
+	    },
+	    {
+	    	"id": "video-section",
+	    	"name": "Video Section",
+	    	"type": "container"
+	    },
+	    {
+	    	"id": "video",
+	    	"name": "Video",
+	    	"type": "video"
+	    },
+	    {
+	    	"id": "video-headline",
+	    	"name": "Video Headline",
+	    	"type": "text"
+	    },
+	    {
+	    	"id": "video-text1",
+	    	"name": "Video Text1",
+	    	"type": "text"
+	    },
+	    {
+	    	"id": "video-text2",
+	    	"name": "Video Text2",
+	    	"type": "text"
+	    },
+		{
+	    	"type": "link",
+	    	"id": "send-btn4",
+	    	"name": "Send Button4",
+	    	"data": {
+	        "href": "#/optin"
+	    	}
+	    },
+	    {
+	    	"id": "realtor-section",
+	    	"name": "Realtor Section",
+	    	"type": "container"
+	    },
+	    {
+	    	"id": "realtor-image",
+	    	"name": "Realtor Image",
+	    	"type": "container"
+	    },
+	    {
+			"data": {
+				"max-width": 184,
+				"max-height": 184
+			},
+	    	"id": "realtor-photo",
+	    	"name": "Realtor Photo",
+	    	"type": "image"
+	    },
+	    {
+	    	"id": "realtor-info",
+	    	"name": "Realtor Info",
+	    	"type": "container"
+	    },
+	    {
+	    	"id": "label1",
+	    	"name": "Info Label",
+	    	"type": "text"
+	    },
+	    {
+	    	"id": "info-text",
+	    	"name": "Info Text",
+	    	"type": "text"
+	    },
+	    {
+	    	"id": "contact-info",
+	    	"name": "Contact Info",
+	    	"type": "container"
+	    },
+	    {
+	    	"id": "label2",
+	    	"name": "Contact Label",
+	    	"type": "text"
+	    },
+	    {
+	    	"id": "phone-link",
+	    	"name": "Phone",
+	    	"type": "text"
+	    },
+	    {
+	    	"id": "email-link",
+	    	"name": "Email",
+	    	"type": "text"
+	    },
+	    {
+			"data": {
+				"max-width": 18,
+				"max-height": 18
+			},
+	    	"id": "phone",
+	    	"name": "Phone Image",
+	    	"type": "image",
+	    	"comment": "Recommended image size is 18x18px"
+	    },
+	    {
+			"data": {
+				"max-width": 18,
+				"max-height": 18
+			},
+	    	"id": "email",
+	    	"name": "Email Image",
+	    	"type": "image",
+	    	"comment": "Recommended image size is 18x18px"
+	    },
+	    {
+	    	"id": "logos-section",
+	    	"name": "Logos Section",
+	    	"type": "container"
+	    },
+	    {
+			"data": {
+				"max-width": 188,
+				"max-height": 100
+			},
+	    	"id": "logo1",
+	    	"name": "Logo1",
+	    	"type": "image-link",
+	    	"comment": "Recommended image size is 188x66px"
+	    },
+	    {
+			"data": {
+				"max-width": 188,
+				"max-height": 100
+			},
+	    	"id": "logo2",
+	    	"name": "Logo2",
+	    	"type": "image-link",
+	    	"comment": "Recommended image size is 188x66px"
+	    },
+	    {
+			"data": {
+				"max-width": 188,
+				"max-height": 100
+			},
+	    	"id": "logo3",
+	    	"name": "Logo3",
+	    	"type": "image-link",
+	    	"comment": "Recommended image size is 188x66px"
+	    },
+	    {
+			"data": {
+				"max-width": 188,
+				"max-height": 100
+			},
+	    	"id": "logo4",
+	    	"name": "Logo4",
+	    	"type": "image-link",
+	    	"comment": "Recommended image size is 188x66px"
+	    },
+	    {
+			"data": {
+				"max-width": 188,
+				"max-height": 100
+			},
+	    	"id": "logo5",
+	    	"name": "Logo5",
+	    	"type": "image-link",
+	    	"comment": "Recommended image size is 188x66px"
+	    },
+	    {
+	    	"id": "footer",
+	    	"name": "Footer",
+	    	"type": "container"
+	    },
+	    {
+	    	"id": "footer-text",
+	    	"name": "Footer Text",
+	    	"type": "text"
+	    },
+	    {
+	    	"id": "social-media",
+	    	"name": "Social Media Links",
+	    	"type": "container"
+	    },
+	    {
+			"data": {
+				"max-width": 36,
+				"max-height": 36
+			},
+	    	"id": "link1",
+	    	"name": "LinkedIn",
+	    	"type": "image-link"
+	    },
+	    {
+			"data": {
+				"max-width": 36,
+				"max-height": 36
+			},
+	    	"id": "link2",
+	    	"name": "Facebook",
+	    	"type": "image-link"
+	    },
+	    {
+			"data": {
+				"max-width": 36,
+				"max-height": 36
+			},	    	
+	    	"id": "link3",
+	    	"name": "Twitter",
+	    	"type": "image-link"
+	    },
+	    {
+			"data": {
+				"max-width": 36,
+				"max-height": 36
+			},	    	
+	    	"id": "link4",
+	    	"name": "Google Plus",
+	    	"type": "image-link"
+	    },
+	    {
+			"data": {
+				"max-width": 36,
+				"max-height": 36
+			},	    	
+	    	"id": "link5",
+	    	"name": "Pinterest",
+	    	"type": "image-link"
+	    },
+	    {
+			"data": {
+				"max-width": 36,
+				"max-height": 36
+			},
+	    	"id": "link6",
+	    	"name": "YouTube",
+	    	"type": "image-link"
+	    }
+	],
+    "form": {
+        "title": {
+            "css": {
+            	"color": "#211d1e",
+                "font-family": "'Open Sans', 'Lucida Sans Unicode', sans-serif;",
+                "font-size": "22pt;",
+                "font-weight": "700;",
+                "letter-spacing": "-0.08em;"
+            },
+            "html": "<b>Schedule A Showing of: <br />3421 Hennepin Ave, Minneapolis</b>"
+        },
+        "header-text": {
+            "css": {
+            	"display": "none"
+            },
+            "html": "Test"
+        },
+        "submit": {
+            "css": {
+                "background-color": "#FFCB01;",
+                "border-color": "##FFB403;",
+                "border-width": "0pt;",
+                "border-style": "solid;",
+                "font-family": "'Open Sans', 'Lucida Sans Unicode', sans-serif",
+                "font-size": "18pt;",
+                "letter-spacing": "-0.1em;",
+                "text-shadow": "2px 2px 0px #EEB521;"
+            },
+            "html": "SCHEDULE MY SHOWING"
+        },
+        "privacy": {
+            "css": {
+            	"color": "#616777",
+                "font-family": "'Lucida Grande', 'Lucida Sans Unicode', sans-serif;",
+                "font-size": "10pt;",
+                "letter-spacing": "-0.1em;"
+            },
+            "html": "<strong>Privacy Policy:</strong> We hate SPAM and promise to keep your email address safe."
+        },
+        "css": {
+            "background-color": "#ddd"
+        }
+    }
+}

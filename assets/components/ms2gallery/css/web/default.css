@@ -1,0 +1,5 @@
+#msGallery {text-align: center;}
+#msGallery #mainImage {margin-bottom: 10px; padding: 2px; border: 1px solid #ddd;}
+#msGallery .thumbnails {width: 405px; margin:auto;}
+#msGallery .span2 {margin-left: 10px; width: 120px; padding: 2px;}
+.msGalleryLog {width: 100%;overflow: auto;word-wrap: normal;white-space: pre;}

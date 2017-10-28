@@ -1,0 +1,45 @@
+#success {
+    width: 430px;
+    max-width: 100%;
+}
+#loading {
+    background: none repeat scroll 0 0 #fff;
+    padding: 2px 5px;
+    width: 320px;
+}
+#load {
+  background: none repeat scroll 0 0 #d57519;
+  height: 4px;
+  width: 10%;
+}
+[name="lastname"]{
+  display:none !important;
+}
+.error {
+    border: 1px solid red !important;
+    color: red !important;
+}
+.hidden {
+  display:none;
+}
+/*#success.spasibo p {
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    padding: 28px;
+    background: rgba(0,0,0,0.5);
+}*/
+.spasibo {
+    text-align: center;
+    padding: 10px 20px;
+    color: #008AD2;
+}
+.spasibo h4 {
+    color: #D51F60;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.fancybox-overlay-fixed {
+    background: rgba(0,0,0,.7);
+}
