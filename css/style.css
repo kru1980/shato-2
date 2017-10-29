@@ -306,7 +306,6 @@ h2 {
 .call-wrap {
 	min-height: 48px;
 	display: flex;
-	/* flex-basis: 360px; */
 	justify-content: flex-end;
 	flex-wrap: wrap;
 	align-items: center;
@@ -329,21 +328,21 @@ h2 {
 
 ---------------------------------------------------------------------------------------------------- */
 
-/* #banner-img {
+#banner-img {
 	border-bottom: #f0f0ed solid 1px;
 	border-top: #f0f0ed solid 1px;
 	display: block;
 	height: auto;
 	width: 100%;
-} */
-.wrap-baner{
-	max-width: 1920px;
-	height: 940px;
-	background-image: url(../img/index_new.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
+/* .wrap-baner{ */
+	/* max-width: 1920px; */
+	/* min-height: 940px; */
+	/* background-image: url(../img/index_new.jpg); */
+	/* background-size: cover;
+	background-position: center; */
+	/* background-repeat: no-repeat; */
+/* } */
 
 /* Counter Section
 
@@ -453,6 +452,14 @@ h2 {
 #counter-section a#showing-btn:hover {
 	background: #169554;
 }
+
+/* plan */
+.plan_wrap {
+	display: flex;
+	justify-content: center;
+	overflow-x: hidden;
+}
+/*end plan */
 
 .gallyre_section a#showing-btn {
 	background: #1bb868;
