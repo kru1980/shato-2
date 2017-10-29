@@ -287,7 +287,7 @@ h2 {
 .wrap {
 	max-width: 991px;
 	margin: 0 auto;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	position: relative;
 }
 
@@ -296,11 +296,9 @@ h2 {
 
 ---------------------------------------------------------------------------------------------------- */
 
-
-
 .header_grid {
 	min-height: 48px;
-	border: 1px solid;
+	/* border: 1px solid; */
 }
 
 .call-wrap {
@@ -323,7 +321,6 @@ h2 {
 }
 
 
-
 /* Banner Image
 
 ---------------------------------------------------------------------------------------------------- */
@@ -335,14 +332,29 @@ h2 {
 	height: auto;
 	width: 100%;
 }
+
+
 /* .wrap-baner{ */
-	/* max-width: 1920px; */
-	/* min-height: 940px; */
-	/* background-image: url(../img/index_new.jpg); */
-	/* background-size: cover;
+
+
+/* max-width: 1920px; */
+
+
+/* min-height: 940px; */
+
+
+/* background-image: url(../img/index_new.jpg); */
+
+
+/* background-size: cover;
 	background-position: center; */
-	/* background-repeat: no-repeat; */
+
+
+/* background-repeat: no-repeat; */
+
+
 /* } */
+
 
 /* Counter Section
 
@@ -453,12 +465,17 @@ h2 {
 	background: #169554;
 }
 
+
 /* plan */
-.plan_wrap, .middle-section__wrap {
+
+.plan_wrap,
+.middle-section__wrap {
 	display: flex;
 	justify-content: center;
 	overflow-x: hidden;
 }
+
+
 /*end plan */
 
 .gallyre_section a#showing-btn {
@@ -1288,6 +1305,7 @@ img.preloader {
 	display: none;
 }
 
+
 /* pupop */
 
 .over_forms {
@@ -1342,7 +1360,10 @@ img.preloader {
 	margin-top: 10px;
 	text-transform: uppercase;
 }
+
+
 /* end pupop */
+
 #left3 #desc {
 	margin-bottom: 30px !important;
 }
@@ -1354,7 +1375,14 @@ img.preloader {
 .gallyre_section .owl-nav {
 	position: absolute;
 	width: 100%;
-	top: 98px;
+	/* top: 98px; */
+	top: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+	.gallyre_section .owl-nav {
+		top: 30%;
+	}
 }
 
 .gallyre_section .owl-nav .owl-prev {
@@ -1393,7 +1421,9 @@ img.preloader {
 	margin-top: 30px;
 }
 
+
 /* refactoring style */
+
 a#showing-btn {
 	background: #1bb868;
 	color: #fffffc;
@@ -1408,13 +1438,17 @@ a#showing-btn {
 	/* width: 558px; */
 	width: 100%;
 }
+
 a#showing-btn:hover {
 	background: #169554;
 }
+
+
 /* a#showing-btn {
 	font-size: 20px;
 	padding: 16px;
 	width: 100%;
 } */
+
 
 /* end refactoring style */

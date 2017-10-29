@@ -1,0 +1,341 @@
+
+/* popup */
+
+/* .mfp-bg {
+	background-color: rgba(134, 188, 48, 0.6);
+} */
+
+#formPopup input:required:invalid {
+	/* border: 1px solid red; */
+}
+/* =========================================== */
+/* 
+
+====== Zoom effect ======
+
+*/
+/* .mfp-zoom-in { */
+	/* start state */
+	/* animate in */
+	/* animate out */
+  /* } */
+  .mfp-zoom-in .mfp-with-anim {
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+	transform: scale(0.8);
+  }
+  .mfp-zoom-in.mfp-bg {
+	opacity: 0;
+	transition: all 0.3s ease-out;
+  }
+  .mfp-zoom-in.mfp-ready .mfp-with-anim {
+	opacity: 1;
+	transform: scale(1);
+  }
+  .mfp-zoom-in.mfp-ready.mfp-bg {
+	opacity: 0.8;
+  }
+  .mfp-zoom-in.mfp-removing .mfp-with-anim {
+	transform: scale(0.8);
+	opacity: 0;
+  }
+  .mfp-zoom-in.mfp-removing.mfp-bg {
+	opacity: 0;
+  }
+
+/* ================================================ */
+.linkFormPupop {
+	position: fixed;
+	right: 0px;
+	top: calc(50% - 100px);
+	max-width: 200px;
+	min-height: 70px;
+	padding: 10px 0;
+	background-color: #1bb868;
+	color: #fff;
+	border-radius: 10px 0 0 10px;
+	/* opacity: 0.8; */
+	font-family: ProximaNova, Arial, Verdana, sans-serif;
+	text-align: center;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	z-index: 100;
+	display: flex;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.linkFormPupop ul {
+	margin: 0;
+	padding: 0 0 0 20px;
+	position: relative;
+}
+
+.linkFormPupop ul>div.linkFormPupop_close {
+	position: absolute;
+	left: 7px;
+	top: -13px;
+	color: grey;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+	z-index: 100;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.linkFormPupop ul>div.linkFormPupop_close:hover {
+	/* transform: scale(2, 2) */
+}
+
+.linkFormPupop li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.linkFormPupop a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin-right: 10px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	outline: none;
+	padding: 3px 0 3px 10px;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.linkFormPupop a:hover {
+	right: 0;
+	background-color: #169554;
+	/* opacity: 1; */
+	color: #fff;
+	border-radius: 4px 0 0 4px;
+}
+/* style first window */
+.white-popup {
+	position: relative;
+	background: #FFF;
+	padding: 30px 20px 20px;
+	width: auto;
+	max-width: 500px;
+	height: 300px;
+	margin: -60px auto; /*Эту хуйню передалать!!!!!!!!!!!!!!!!!!!!!!! Стас ты ведь это не увидешь меня бесило, что окно низковато я его вверх приподнял*/
+	border: 2px solid #1bb868;
+}
+
+.formPopup_arrow {
+	position: relative;
+	color: #fff;
+	background-color: #1bb868;
+	width: 30%;
+	padding: 7px 0 7px 10px;
+	margin-left: -22px;
+}
+
+.formPopup_arrow:after {
+	position: absolute;
+	right: -40px;
+	top: 0;
+	content: "";
+	border: 20px solid transparent;
+	border-left: 20px solid #1bb868;
+}
+.formPupop-wraper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+/* style radio */
+.radio {
+	font-size: 16px;
+	margin: 0.5rem;
+  }
+  .radio input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+  }
+  .radio input[type="radio"] + .radio-label:before {
+	content: '';
+	background: #f4f4f4;
+	border-radius: 100%;
+	border: 1px solid #b4b4b4;
+	display: inline-block;
+	width: 1.4em;
+	height: 1.4em;
+	position: relative;
+	top: -0.2em;
+	margin-right: 1em;
+	vertical-align: top;
+	cursor: pointer;
+	text-align: center;
+	transition: all 250ms ease;
+  }
+  .radio input[type="radio"]:checked + .radio-label:before {
+	background-color: #1bb868;
+	box-shadow: inset 0 0 0 4px #f4f4f4;
+  }
+  .radio input[type="radio"]:focus + .radio-label:before {
+	outline: none;
+	border-color: #1bb868;
+  }
+  .radio input[type="radio"]:disabled + .radio-label:before {
+	box-shadow: inset 0 0 0 4px #f4f4f4;
+	border-color: #b4b4b4;
+	background: #b4b4b4;
+  }
+  .radio input[type="radio"] + .radio-label:empty:before {
+	margin-right: 0;
+  }
+  
+
+/* end style radio */
+
+
+.formPopup-label {
+	cursor: pointer;
+	margin-top: -30px;
+}
+
+.formPopup-label>h4 {
+	text-align: center;
+}
+
+.formPopup-label__inputs {
+	height: 110px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	cursor: pointer;
+	align-items: center;
+}
+
+.formPopup-label__input-wraper {
+	/* width: 90%; */
+	display: flex;
+	justify-content: space-around;
+}
+
+
+/* // кнопки перехода */
+
+.formPopup-link {
+	border-radius: 3px;
+	border-radius: 3px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.formPopup-link__item {
+	width: 40%;
+	height: 100%;
+	text-align: center;
+}
+
+.formPopup-link button {
+	background-color: #1bb868;
+	border: 1px solid rgb(24, 179, 63);
+	border-radius: 3px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	height: 100%;
+	padding: 8px 12px 8px 12px;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.formPopup-link button:hover {
+	background-color: rgb(24, 179, 63);
+	border: 1px solid #1bb868;
+	opacity: 0.8;
+	border-radius: 3px;
+}
+.formPopup-link button:disabled {
+	background-color: rgb(24, 179, 63);
+	border: 1px solid rgb(24, 179, 63);
+	opacity: 0.8;
+	color: #666;
+	/* cursor: pointer; */
+
+}
+
+.formPopup-link__item--back a:hover {
+	padding-right: 12px;
+}
+
+
+/* end кнопка перехода */
+
+
+/* third window  */
+
+.formPopup-button button {
+	width: 100%;
+	padding: 6px 0;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	background-color: #1bb868;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.formPopup-button button:hover {
+	background-color: rgb(24, 179, 63);
+}
+
+.formPopup-label__inputs--third {
+	margin-bottom: 20px;
+}
+
+.formPopup-label__input-item--third {
+	width: 100%;
+}
+
+.formPopup-label__input-item--third input {
+	width: 98%;
+	padding: 6px 0;
+	font-size: 16px;
+	border-radius: 3px;
+}
+
+/* fourth window  */
+.white-popup--pad {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 40px;
+}
+.formPopup-title {
+	text-align: center;
+	font-size: 22px;
+    font-family: 'Open Sans Light','Open Sans',Arial;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+/* END fourth window  */
+
+/* запрет появления формы на экранах меньше 550 */
+
+@media only screen and (max-width: 768px) {
+
+}
+@media only screen and (max-width: 550px) {
+	.linkFormPupop {
+		display: none;
+	}
+}
