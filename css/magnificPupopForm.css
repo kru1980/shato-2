@@ -87,7 +87,7 @@
 }
 
 .linkFormPupop ul>div.linkFormPupop_close:hover {
-	transform: scale(2, 2)
+	/* transform: scale(2, 2) */
 }
 
 .linkFormPupop li {
