@@ -1,38 +1,7 @@
-/* popup */
 
 
-/* .mfp-bg {
-	background-color: rgba(134, 188, 48, 0.6);
-} */
+/* ====== Zoom effect ====== */
 
-#formPopup input:required:invalid {
-	/* border: 1px solid red; */
-}
-
-
-/* =========================================== */
-
-
-/* 
-
-====== Zoom effect ======
-
-*/
-
-
-/* .mfp-zoom-in { */
-
-
-/* start state */
-
-
-/* animate in */
-
-
-/* animate out */
-
-
-/* } */
 
 .mfp-zoom-in .mfp-with-anim {
 	opacity: 0;
@@ -106,10 +75,6 @@
 	-webkit-transition: 0.2s;
 	-moz-transition: 0.2s;
 	transition: 0.2s;
-}
-
-.linkFormPupop ul>div.linkFormPupop_close:hover {
-	/* transform: scale(2, 2) */
 }
 
 .linkFormPupop li {
