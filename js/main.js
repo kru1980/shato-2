@@ -28,21 +28,43 @@ $(document).ready(function () {
 	});
 
 	//E-mail Ajax Send
-
 	$("form").submit(function () { //Change
-		var th = $(this);
+		let first = $('#pupopFormFirstWindow');
+		let second = $('#pupopFormSecondWindow');
+		let third = $(this);
+
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
-			data: th.serialize()
+			data: third.serialize()
 		}).done(function () {
-			alert("Thank you!");
+			// alert("Спасибо Вам!");
 			setTimeout(function () {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
+				$.magnificPopup.close();
+				first.trigger("reset");
+				second.trigger("reset");
+				third.trigger("reset");
+				$('#pupopButtonNextSecondWindow').attr('disabled', true);
+				$('#pupopButtonNextThirdWindow').attr('disabled', true);
+			}, 200);
 		});
 		return false;
 	});
+
+	// $("form").submit(function () { //Change
+	// 	var th = $(this);
+	// 	$.ajax({
+	// 		type: "POST",
+	// 		url: "mail.php", //Change
+	// 		data: th.serialize()
+	// 	}).done(function () {
+	// 		// alert("Thank you!");
+	// 		setTimeout(function () {
+	// 			// Done Functions
+	// 			th.trigger("reset");
+	// 		}, 1000);
+	// 	});
+	// 	return false;
+	// });
 
 });

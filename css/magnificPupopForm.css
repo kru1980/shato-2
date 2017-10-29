@@ -6,7 +6,7 @@
 } */
 
 #formPopup input:required:invalid {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 /* =========================================== */
 /* 
@@ -54,12 +54,12 @@
 	background-color: #1bb868;
 	color: #fff;
 	border-radius: 10px 0 0 10px;
-	opacity: 0.8;
+	/* opacity: 0.8; */
 	font-family: ProximaNova, Arial, Verdana, sans-serif;
 	text-align: center;
-	-webkit-transition: all 1s;
-	-moz-transition: all 1s;
-	transition: all 1s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 	z-index: 100;
 	display: flex;
 	text-align: left;
@@ -81,9 +81,9 @@
 	font-size: 20px;
 	cursor: pointer;
 	z-index: 100;
-	-webkit-transition: 0.4s;
-	-moz-transition: 0.4s;
-	transition: 0.4s;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
 }
 
 .linkFormPupop ul>div.linkFormPupop_close:hover {
@@ -106,14 +106,15 @@
 	text-transform: uppercase;
 	outline: none;
 	padding: 3px 0 3px 10px;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	transition: all 0.5s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
 }
 
 .linkFormPupop a:hover {
 	right: 0;
 	background-color: #169554;
+	/* opacity: 1; */
 	color: #fff;
 	border-radius: 4px 0 0 4px;
 }

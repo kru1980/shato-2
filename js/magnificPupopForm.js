@@ -5,7 +5,7 @@ $(document).ready(function () {
 	$('.linkFormPupop_close').click(function () {
 		let close = $('.linkFormPupop');
 		if (close.css('right') === '0px' || close.css('right') === 0) {
-			close.css('right', '-140px');
+			close.css('right', '-150px');
 		} else {
 			close.css('right', '0');
 		}
@@ -82,45 +82,44 @@ $(document).ready(function () {
 	// END input mask ===========================
 
 	//E-mail Ajax Send 
-	$("#pupopFormThirdWindow").submit(function () { //Change
-		let first = $('#pupopFormFirstWindow');
-		let second = $('#pupopFormSecondWindow');
-		let third = $(this);
+	// $("#pupopFormThirdWindow").submit(function () { //Change
+	// 	let first = $('#pupopFormFirstWindow');
+	// 	let second = $('#pupopFormSecondWindow');
+	// 	let third = $(this);
 
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: third.serialize()
-		}).done(function () {
-			// alert("Спасибо Вам!");
-			setTimeout(function () {
-				$.magnificPopup.close();
-				first.trigger("reset");
-				second.trigger("reset");
-				third.trigger("reset");
-				$('#pupopButtonNextSecondWindow').attr('disabled', true);
-				$('#pupopButtonNextThirdWindow').attr('disabled', true);
-			}, 200);
-		});
-		return false;
-	});
+	// 	$.ajax({
+	// 		type: "POST",
+	// 		url: "mail.php", 
+	// 		data: third.serialize()
+	// 	}).done(function () {
+	// 		setTimeout(function () {
+	// 			$.magnificPopup.close();
+	// 			first.trigger("reset");
+	// 			second.trigger("reset");
+	// 			third.trigger("reset");
+	// 			$('#pupopButtonNextSecondWindow').attr('disabled', true);
+	// 			$('#pupopButtonNextThirdWindow').attr('disabled', true);
+	// 		}, 200);
+	// 	});
+	// 	return false;
+	// });
 
 
 	// send four and fifth forms
-	$("#pupopFormFourthWindow").submit(function () { //Change
-		let first = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: first.serialize()
-		}).done(function () {
-			// alert("Спасибо Вам!");
-			setTimeout(function () {
-				$.magnificPopup.close();
-				first.trigger("reset");
-			}, 200);
-		});
-		return false;
-	});
+	// $("#pupopFormFourthWindow").submit(function () { //Change
+	// 	let first = $(this);
+	// 	$.ajax({
+	// 		type: "POST",
+	// 		url: "mail.php", //Change
+	// 		data: first.serialize()
+	// 	}).done(function () {
+	// 		// alert("Спасибо Вам!");
+	// 		setTimeout(function () {
+	// 			$.magnificPopup.close();
+	// 			first.trigger("reset");
+	// 		}, 200);
+	// 	});
+	// 	return false;
+	// });
 
 });
