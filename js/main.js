@@ -6,7 +6,20 @@ $(document).ready(function () {
 	$(".owl-carousel").owlCarousel({
 		loop: true,
 		margin: 10,
-		nav: true
+		nav: true,
+		responsive: {
+			0: {
+				items: 1,
+				nav: false,
+				autoplay: true,
+				autoplayHoverPause: true,
+
+			},
+			600: {
+				items: 2
+			}
+
+		}
 	});
 
 	$('.popup-gallery').magnificPopup({
