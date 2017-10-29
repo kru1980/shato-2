@@ -454,7 +454,7 @@ h2 {
 }
 
 /* plan */
-.plan_wrap {
+.plan_wrap, .middle-section__wrap {
 	display: flex;
 	justify-content: center;
 	overflow-x: hidden;
