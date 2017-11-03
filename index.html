@@ -12,7 +12,7 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 
 	<link rel="stylesheet" href="css/owl.carousel.css">
-
+	<!-- <link rel="stylesheet" href="css/fonts.css"> -->
 	<link rel="stylesheet" href="js/Magnific-Popup/magnific-popup.css">
 
 	<link href="assets/template/css/animate.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 	<script src="js/countdown.js" type="text/javascript"></script>
 
 	<meta name="yandex-verification" content="1004b01056e69c2e" />
-	
+
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript">
 		(function (d, w, c) {
@@ -535,165 +535,173 @@
 	<!-- calculator -->
 	<!-- кнопка открытия формы -->
 	<div class="linkFormPupop">
-			<ul id="linkFormPupop-inline-popups">
-				<div class="linkFormPupop_close">x</div>
-				<li>
-					<a href="#pupopFormFirstWindow" data-effect="mfp-zoom-in">калькулятор</a>
-				</li>
-				<li>
-					<a href="#pupopFormFourthWindow" data-effect="mfp-zoom-in">онлайн заказ</a>
-				</li>
-				<li>
-					<a href="#pupopFormFourthWindow" data-effect="mfp-zoom-in">скидки</a>
-				</li>
-			</ul>
+		<ul id="linkFormPupop-inline-popups">
+			<div class="linkFormPupop_close">x</div>
+			<li>
+				
+				<a href="#pupopFormFirstWindow" data-effect="mfp-zoom-in"><i class="fa fa-calculator fa-calculator--link fa-lg" aria-hidden="true"></i>калькулятор</a>
+			</li>
+			<li>
+				<a href="#pupopFormFourthWindow" data-effect="mfp-zoom-in"><i class="fa fa-phone fa-calculator--link fa-lg" aria-hidden="true"></i>онлайн заказ</a>
+			</li>
+			<li>
+				<a href="#pupopFormFourthWindow" data-effect="mfp-zoom-in"><i class="fa fa-tag fa-calculator--link fa-lg" aria-hidden="true"></i>скидки</a>
+			</li>
+		</ul>
+	</div>
+
+	<form id="pupopFormFirstWindow" class="white-popup mfp-with-anim mfp-hide">
+		<div class="formPupop-wraper">
+			<div class="formPopup_arrow">
+				Шаг: 1 из 3
+			</div>
+			<div class="formPopup-label__inputs ">
+				<h4>Какой площади Вам нужен участок, соток?</h4>
+				<div class="formPopup-label__input-wraper">
+					<div class="radio">
+						<input id="landArea" type="radio" name="landArea" value="6-8" required>
+						<label for="landArea" class="radio-label">6 - 8</label>
+					</div>
+					<div class="radio">
+						<input id="landArea1" type="radio" name="landArea" value="8-10" required>
+						<label for="landArea1" class="radio-label">8 - 10</label>
+					</div>
+					<div class="radio">
+						<input id="landArea2" type="radio" name="landArea" value="10-15" required>
+						<label for="landArea2" class="radio-label">10 - 15</label>
+					</div>
+					<div class="radio">
+						<input id="landArea3" type="radio" name="landArea" value="более 15" required>
+						<label for="landArea3" class="radio-label">более 15</label>
+					</div>
+				</div>
+			</div>
+			<div class="formPopup-link">
+				<div class="formPopup-link__item">
+					<button id="pupopButtonNextSecondWindow" disabled class="second-popup-link" title="Сперва выберите ответ!">Следующий шаг</button>
+				</div>
+			</div>
 		</div>
-	
-		<form id="pupopFormFirstWindow" class="white-popup mfp-with-anim mfp-hide">
-			<div class="formPupop-wraper">
-				<div class="formPopup_arrow">
-					Шаг: 1 из 3
+	</form>
+	<!-- Contents of second window -->
+	<form id="pupopFormSecondWindow" class="mfp-hide white-popup mfp-with-anim">
+		<div class="formPupop-wraper ">
+			<div class="formPopup_arrow">
+				Шаг: 2 из 3
+			</div>
+			<div class="formPopup-label">
+				<div class="formPopup-label__inputs">
+					<h4>Какой ландшафт участка Вы предпочитаете?</h4>
+					<div class="formPopup-label__input-wraper ">
+						<div class="radio">
+							<input id="landscape" type="radio" name="landscape" value="На опушке" required>
+							<label for="landscape" class="radio-label">На опушке</label>
+						</div>
+						<div class="radio">
+							<input id="landscape1" type="radio" name="landscape" value="На Лугу" required>
+							<label for="landscape1" class="radio-label">На Лугу</label>
+						</div>
+						<div class="radio">
+							<input id="landscape2" type="radio" name="landscape" value="У озера" required>
+							<label for="landscape2" class="radio-label">У озера</label>
+						</div>
+					</div>
 				</div>
+			</div>
+			<div class="formPopup-link">
+				<div class="formPopup-link__item ">
+					<button disabled id="pupopButtonNextThirdWindow" class="third-popup-link" title="Сперва выберите ответ!">Следующий шаг</button>
+				</div>
+			</div>
+		</div>
+	</form>
+	<!-- END Contents of second window -->
+
+	<!-- Contents of third window -->
+	<form id="pupopFormThirdWindow" class="mfp-hide white-popup">
+		<!-- data answers -->
+		<input type="hidden" name="Площадь участка" value="">
+		<input type="hidden" name="Ландшафт" value="">
+		<!-- END data answers -->
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Поселок Шато-2">
+		<input type="hidden" name="admin_email" value="slava@barrus.ru">
+		<input type="hidden" name="form_subject" value="Заявка от псевдокалькулятора">
+		<!-- END Hidden Required Fields -->
+		<div class="formPupop-wraper">
+			<div class="formPopup_arrow ">
+				Шаг: 3 из 3
+			</div>
+			<div class="formPopup-label ">
+				<h4>По вашей заявке с вами свяжется наш специалист</h4>
+				<div class="formPopup-label__inputs">
+					<div class="formPopup-label__input-wraper ">
+						<div class="formPopup-label__input-item formPopup-label__input-item--third ">
+							<label for="pupopName">Как к вам обращаться?
+								<input type="text" name="Имя заказчика" id="pupopName" pattern="^[А-Яа-яЁё\s]+$" placeholder="Как к вам обращаться?" required
+								    autofocus>
+							</label>
+						</div>
+						<div class="formPopup-label__input-item formPopup-label__input-item--third ">
+							<label for="pupopPhone">Ваш телефон без (+7):
+								<input type="tel" name="Номер заказчика" id="pupopPhone" required>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="formPopup-button">
+				<button type="submit" title="Нажмите для отправки формы">Отправить</button>
+			</div>
+		</div>
+	</form>
+	<!-- END Contents of third window -->
+	<!-- Contents of fourth window -->
+	<form id="pupopFormFourthWindow" class="mfp-hide white-popup white-popup--pad mfp-with-anim">
+
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Поселок Шато-2">
+		<input type="hidden" name="admin_email" value="slava@barrus.ru">
+		<input type="hidden" name="form_subject" id="form_subject" value="">
+		<!-- Скриптом подставляем-->
+		<!-- END Hidden Required Fields -->
+		<div class="formPupop-wraper ">
+			<div class="formPopup-title">
+				<p class="formPopup-text formPopup-text--online">Условия получения скидки в 3%.
+					<br> Получить специальные условия на участок!</p>
+				<p class="formPopup-text formPopup-text--discount">Заказать обратный звонок.
+					<br> Мы поможем Вам выбрать лучший участок</p>
+			</div>
+			<div class="formPopup-label ">
 				<div class="formPopup-label__inputs ">
-					<h4>Какой площади Вам нужен участок, соток?</h4>
-					<div class="formPopup-label__input-wraper">
-						<div class="radio">
-							<input id="landArea" type="radio" name="landArea" value="6-8" required>
-							<label for="landArea" class="radio-label">6 - 8</label>
+					<div class="formPopup-label__input-wraper ">
+						<div class="formPopup-label__input-item formPopup-label__input-item--third ">
+							<label for="pupopName">Как к вам обращаться?
+								<input type="text" name="Имя заказчика" id="pupopNameSecond" pattern="^[А-Яа-яЁё\s]+$" placeholder="Как к вам обращаться?"
+								    required autofocus>
+							</label>
 						</div>
-						<div class="radio">
-							<input id="landArea1" type="radio" name="landArea" value="8-10" required>
-							<label for="landArea1" class="radio-label">8 - 10</label>
+						<div class="formPopup-label__input-item formPopup-label__input-item--third ">
+							<label for="pupopPhone">Ваш телефон без (+7):
+								<input type="tel" name="Номер заказчика" id="pupopPhoneSecond" required>
+							</label>
 						</div>
-						<div class="radio">
-							<input id="landArea2" type="radio" name="landArea" value="10-15" required>
-							<label for="landArea2" class="radio-label">10 - 15</label>
-						</div>
-						<div class="radio">
-							<input id="landArea3" type="radio" name="landArea" value="более 15" required>
-							<label for="landArea3" class="radio-label">более 15</label>
-						</div>
-					</div>
-				</div>
-				<div class="formPopup-link">
-					<div class="formPopup-link__item">
-						<button id="pupopButtonNextSecondWindow" disabled class="second-popup-link" title="Сперва выберите ответ!">Следующий шаг</button>
 					</div>
 				</div>
 			</div>
-		</form>
-		<!-- Contents of second window -->
-		<form id="pupopFormSecondWindow" class="mfp-hide white-popup mfp-with-anim">
-			<div class="formPupop-wraper ">
-				<div class="formPopup_arrow">
-					Шаг: 2 из 3
-				</div>
-				<div class="formPopup-label">
-					<div class="formPopup-label__inputs">
-						<h4>Какой ландшафт участка Вы предпочитаете?</h4>
-						<div class="formPopup-label__input-wraper ">
-							<div class="radio">
-								<input id="landscape" type="radio" name="landscape" value="На опушке" required>
-								<label for="landscape" class="radio-label">На опушке</label>
-							</div>
-							<div class="radio">
-								<input id="landscape1" type="radio" name="landscape" value="На Лугу" required>
-								<label for="landscape1" class="radio-label">На Лугу</label>
-							</div>
-							<div class="radio">
-								<input id="landscape2" type="radio" name="landscape" value="У озера" required>
-								<label for="landscape2" class="radio-label">У озера</label>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="formPopup-link">
-					<div class="formPopup-link__item ">
-						<button disabled id="pupopButtonNextThirdWindow" class="third-popup-link" title="Сперва выберите ответ!">Следующий шаг</button>
-					</div>
-				</div>
+			<div class="formPopup-button">
+				<button type="submit" title="Нажмите для отправки формы">Отправить</button>
 			</div>
-		</form>
-		<!-- END Contents of second window -->
-	
-		<!-- Contents of third window -->
-		<form id="pupopFormThirdWindow" class="mfp-hide white-popup">
-			<!-- data answers -->
-			<input type="hidden" name="Площадь участка" value="">
-			<input type="hidden" name="Ландшафт" value="">
-			<!-- END data answers -->
-			<!-- Hidden Required Fields -->
-			<input type="hidden" name="project_name" value="Поселок Шато-2">
-			<input type="hidden" name="admin_email" value="slava@barrus.ru">
-			<input type="hidden" name="form_subject" value="Заявка от псевдокалькулятора">
-			<!-- END Hidden Required Fields -->
-			<div class="formPupop-wraper">
-				<div class="formPopup_arrow ">
-					Шаг: 3 из 3
-				</div>
-				<div class="formPopup-label ">
-					<h4>По вашей заявке с вами свяжется наш специалист</h4>
-					<div class="formPopup-label__inputs">
-						<div class="formPopup-label__input-wraper ">
-							<div class="formPopup-label__input-item formPopup-label__input-item--third ">
-								<label for="pupopName">Как к вам обращаться?
-									<input type="text" name="Имя заказчика" id="pupopName" pattern="^[А-Яа-яЁё\s]+$" placeholder="Как к вам обращаться?" required
-										autofocus>
-								</label>
-							</div>
-							<div class="formPopup-label__input-item formPopup-label__input-item--third ">
-								<label for="pupopPhone">Ваш телефон без (+7):
-									<input type="tel" name="Номер заказчика" id="pupopPhone" required>
-								</label>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="formPopup-button">
-					<button type="submit" title="Нажмите для отправки формы">Отправить</button>
-				</div>
-			</div>
-		</form>
-		<!-- END Contents of third window -->
-		<!-- Contents of fourth window -->
-		<form id="pupopFormFourthWindow" class="mfp-hide white-popup white-popup--pad mfp-with-anim">
-	
-			<!-- Hidden Required Fields -->
-			<input type="hidden" name="project_name" value="Поселок Шато-2">
-			<input type="hidden" name="admin_email" value="slava@barrus.ru">
-			<input type="hidden" name="form_subject" id="form_subject" value="">  <!-- Скриптом подставляем-->
-			<!-- END Hidden Required Fields -->
-			<div class="formPupop-wraper ">
-				<div class="formPopup-title" >
-					<p class="formPopup-text formPopup-text--online">Условия получения скидки в 3%. <br> Получить специальные условия на участок!</p>
-					<p class="formPopup-text formPopup-text--discount">Заказать обратный звонок. <br> Мы поможем Вам выбрать лучший участок</p>
-				</div>
-				<div class="formPopup-label ">
-					<div class="formPopup-label__inputs ">
-						<div class="formPopup-label__input-wraper ">
-							<div class="formPopup-label__input-item formPopup-label__input-item--third ">
-								<label for="pupopName">Как к вам обращаться?
-									<input type="text" name="Имя заказчика" id="pupopNameSecond" pattern="^[А-Яа-яЁё\s]+$" placeholder="Как к вам обращаться?" required
-										autofocus>
-								</label>
-							</div>
-							<div class="formPopup-label__input-item formPopup-label__input-item--third ">
-								<label for="pupopPhone">Ваш телефон без (+7):
-									<input type="tel" name="Номер заказчика" id="pupopPhoneSecond" required>
-								</label>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="formPopup-button">
-					<button type="submit" title="Нажмите для отправки формы">Отправить</button>
-				</div>
-			</div>
-		</form>
-		<!--END Contents of fourth window -->
+		</div>
+	</form>
+	<!--END Contents of fourth window -->
 	<!--END calculator -->
 	<!-- scroll button -->
-	<div class="scroll-top-wrapper"><span class="scroll-top-inner"><i class="fa fa-2x fa-arrow-circle-up"></i></span></div>
+	<div class="scroll-top-wrapper">
+		<span class="scroll-top-inner">
+			<i class="fa fa-2x fa-arrow-circle-up"></i>
+		</span>
+	</div>
 
 	<!-- END scroll button -->
 	<script src="js/main.js"></script>

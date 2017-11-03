@@ -39,14 +39,13 @@
 	position: fixed;
 	right: 0px;
 	top: calc(50% - 100px);
-	max-width: 200px;
-	min-height: 70px;
+	width: 180px;
+	min-height: 140px;
 	padding: 10px 0;
-	background-color: #1bb868;
+	/* background-color: #1bb868; */
+	background-color: #86bc30;
 	color: #fff;
 	border-radius: 10px 0 0 10px;
-	/* opacity: 0.8; */
-	font-family: ProximaNova, Arial, Verdana, sans-serif;
 	text-align: center;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -55,12 +54,18 @@
 	display: flex;
 	text-align: left;
 	text-transform: uppercase;
+	opacity: 0.8;
 }
 
 .linkFormPupop ul {
 	margin: 0;
 	padding: 0 0 0 20px;
 	position: relative;
+	font-size: 14px;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	
 }
 
 .linkFormPupop ul>div.linkFormPupop_close {
@@ -81,30 +86,39 @@
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	line-height: 36px;
+	border-bottom: 1px solid #fff;
 }
 
 .linkFormPupop a {
 	display: block;
-	width: 100%;
-	height: 100%;
-	margin-right: 10px;
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
 	outline: none;
-	padding: 3px 0 3px 10px;
+	padding: 3px 10px 3px 32px;
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	transition: all 0.2s;
+	font-family: Arial;
+	font-weight: 700;
+	font-size: 14px;
+	position: relative;
 }
-
-.linkFormPupop a:hover {
+.fa-calculator--link{
+	position: absolute;
+	top: 34%;
+    left: 6px;
+}
+.linkFormPupop a:hover  {
 	right: 0;
-	background-color: #169554;
-	/* opacity: 1; */
+	background-color: #046232;
+	/* background-color: #4fa72d; */
 	color: #fff;
 	border-radius: 4px 0 0 4px;
+	border-radius: 4px;
 }
+
 
 
 /* style first window */
@@ -118,7 +132,6 @@
 	height: 300px;
 	min-height: 360px;
 	margin: -60px auto;
-	/*Эту хуйню передалать!!!!!!!!!!!!!!!!!!!!!!! Стас ты ведь это не увидешь меня бесило, что окно низковато я его вверх приподнял*/
 	border: 2px solid #1bb868;
 }
 

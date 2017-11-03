@@ -5,7 +5,7 @@ $(document).ready(function () {
 	$('.linkFormPupop_close').click(function () {
 		let close = $('.linkFormPupop');
 		if (close.css('right') === '0px' || close.css('right') === 0) {
-			close.css('right', '-150px');
+			close.css('right', '-160px');
 		} else {
 			close.css('right', '0');
 		}
