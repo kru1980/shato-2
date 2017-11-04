@@ -14,15 +14,18 @@ $(document).ready(function () {
 
 	$('#linkFormPupop-inline-popups').click(function (e) {
 			let mes = e.target.text;
+			// console.log('1')
 			setTimeout(function () {
 				$('input[name="form_subject"]').val(mes);
 			}, 500);
 			if (mes === "скидки") {
 				$('.formPopup-text--discount').hide();
 				$('.formPopup-text--online').show();
+				// console.log('2')
 			} else {
 				$('.formPopup-text--online').hide();
 				$('.formPopup-text--discount').show();
+				// console.log('3')
 			}
 		})
 		.magnificPopup({

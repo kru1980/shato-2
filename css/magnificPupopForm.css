@@ -1,7 +1,4 @@
-
-
 /* ====== Zoom effect ====== */
-
 
 .mfp-zoom-in .mfp-with-anim {
 	opacity: 0;
@@ -63,9 +60,8 @@
 	position: relative;
 	font-size: 14px;
 	display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-	
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .linkFormPupop ul>div.linkFormPupop_close {
@@ -105,12 +101,14 @@
 	font-size: 14px;
 	position: relative;
 }
-.fa-calculator--link{
+
+.fa-calculator--link {
 	position: absolute;
 	top: 34%;
-    left: 6px;
+	left: 6px;
 }
-.linkFormPupop a:hover  {
+
+.linkFormPupop a:hover {
 	right: 0;
 	background-color: #046232;
 	/* background-color: #4fa72d; */
@@ -118,7 +116,6 @@
 	border-radius: 4px 0 0 4px;
 	border-radius: 4px;
 }
-
 
 
 /* style first window */
@@ -133,6 +130,10 @@
 	min-height: 360px;
 	margin: -60px auto;
 	border: 2px solid #1bb868;
+}
+
+.margin-title {
+	margin-bottom: -20px;
 }
 
 .formPopup_arrow {
@@ -166,6 +167,16 @@
 .radio {
 	font-size: 16px;
 	margin: 0.5rem;
+}
+
+.radio--img {
+	position: relative;
+	margin-top: 60px;
+	margin-left: 40px;
+}
+
+.radio--margin-second {
+	margin-left: 40px;
 }
 
 .radio input[type="radio"] {
@@ -208,6 +219,30 @@
 
 .radio input[type="radio"]+.radio-label:empty:before {
 	margin-right: 0;
+}
+
+.radio-img__item {
+	width: 80px;
+	height: 60px;
+	position: absolute;
+	top: -72px;
+	left: 0;
+	/* border: 1px solid red; */
+	background-image: url(../img/edje.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.radio-img__item--nextPicture {
+	background-image: url(../img/meadow.jpg);
+}
+
+.radio-img__item:hover {
+	transform: scale(1.1);
 }
 
 
@@ -361,11 +396,20 @@
 		max-width: 680px;
 		height: 370px;
 		padding: 35px 60px;
-
 	}
 	.formPopup_arrow {
 		margin-left: -60px;
+	}
 }
+
+@media only screen and (max-width: 570px) { /*for iphone 5*/
+	.white-popup {
+		padding: 20px 30px;
+		min-height: 300px!important;
+	}
+	.formPopup_arrow {
+		margin-left: -32px;
+	}
 }
 
 @media only screen and (max-width: 550px) {
